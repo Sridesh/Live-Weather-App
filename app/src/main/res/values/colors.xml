@@ -11,5 +11,8 @@
     <color name="bage">#FFFAE0</color>
     <color name="yellow">#FFCD00</color>
     <color name="red">#8B0000</color>
+    <color name="start">#0f2027</color>
+    <color name="end">#2c5364</color>
+    <color name="center">#203A43</color>
     <color name="gray_background">#808080</color>
 </resources>

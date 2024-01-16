@@ -16,8 +16,37 @@
 <!--        android:layout_width="match_parent"-->
 <!--        android:layout_height="match_parent">-->
 
+        <TextView
+            android:layout_width="330dp"
+            android:layout_height="80dp"
+            android:padding="10dp"
+            android:textSize="20dp"
+            android:gravity="center"
+            android:id="@+id/headdd"
+            android:textAlignment="center"
+            android:text="Forecast"
+            android:textColor="@color/white"
+            android:layout_toEndOf="@id/backbtn"
+                />
+
+
+        <Button
+            android:id="@+id/backbtn"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_marginStart="10dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="15dp"
+            android:layout_marginEnd="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginBottom="10dp"
+            android:background="@drawable/back">
+
+        </Button>
         <androidx.recyclerview.widget.RecyclerView
             android:id="@+id/recyclerView"
+            android:padding="10dp"
+            android:layout_marginTop="80dp"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager" />

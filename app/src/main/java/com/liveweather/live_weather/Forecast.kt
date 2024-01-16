@@ -1,6 +1,10 @@
 package com.liveweather.live_weather
 
+import android.content.Intent
 import android.os.Bundle
+import android.util.Log
+import android.view.View
+import android.widget.Button
 import androidx.appcompat.app.AppCompatActivity
 import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.RecyclerView
@@ -11,17 +15,13 @@ import java.net.HttpURLConnection
 import java.net.URL
 import java.text.SimpleDateFormat
 import java.util.*
-import java.util.Date
-import android.content.Intent
-import android.widget.TextView
-import com.liveweather.live_weather.ForecastAdapter
-import android.util.Log
 
 
 class Forecast : AppCompatActivity() {
     private lateinit var recyclerView: RecyclerView
     //    private lateinit var forecastAdapter: ForecastAdapter
     private lateinit var forecastData: List<ForecastEntry>
+
 
 
 
@@ -35,8 +35,14 @@ class Forecast : AppCompatActivity() {
         val lat: String? = intent.getStringExtra("key2")
 
 
+        val backbtn: Button = findViewById(R.id.backbtn)
+        backbtn.setOnClickListener {
 
-        recyclerView = findViewById(R.id.recyclerView)
+            finish()
+        }
+
+
+            recyclerView = findViewById(R.id.recyclerView)
         recyclerView.layoutManager = LinearLayoutManager(this)
 
         val apiUrl = "https://api.openweathermap.org/data/2.5/forecast?lat=$lat&lon=$lon&appid=bc7b5d35939d2152c5319a7c5247387d&units=metric"

@@ -25,10 +25,11 @@ class Home : AppCompatActivity() {
     private lateinit var t2: TextView
     private lateinit var t3: TextView
     private lateinit var t4: TextView
-    private lateinit var ww1: TextView
-    private lateinit var ww2: TextView
-    private lateinit var ww3: TextView
-    private lateinit var ww4: TextView
+
+    private lateinit var i1: ImageView
+    private lateinit var i2: ImageView
+    private lateinit var i3: ImageView
+    private lateinit var i4: ImageView
     private lateinit var imageView: ImageView
     private lateinit var llongitude: String
     private lateinit var llatitude: String
@@ -47,10 +48,10 @@ class Home : AppCompatActivity() {
         t2 = findViewById(R.id.v2)
         t3 = findViewById(R.id.v3)
         t4 = findViewById(R.id.v4)
-        ww1 = findViewById(R.id.w1)
-        ww2 = findViewById(R.id.w2)
-        ww3 = findViewById(R.id.w3)
-        ww4 = findViewById(R.id.w4)
+        i1 = findViewById(R.id.i1)
+        i2 = findViewById(R.id.i2)
+        i3 = findViewById(R.id.i3)
+        i4 = findViewById(R.id.i4)
         imageView = findViewById<ImageView>(R.id.idTVweather)
         mainn = findViewById(R.id.mainn)
         des = findViewById(R.id.des)
@@ -189,10 +190,11 @@ class Home : AppCompatActivity() {
                     t2.text = "$humidity"
                     t3.text = "$longitude"
                     t4.text = "$latitude"
-                    ww1.text = "Temperature :"
-                    ww2.text = "Humidity :"
-                    ww3.text = "Longitude :"
-                    ww4.text = "Latitude :"
+                    i1.visibility = ImageView.VISIBLE
+                    i2.visibility = ImageView.VISIBLE
+                    i3.visibility = ImageView.VISIBLE
+                    i4.visibility = ImageView.VISIBLE
+
                     des.text = "$description"
                     mainn.text = "$mainner"
                     blurr.visibility = TextView.VISIBLE

@@ -34,10 +34,6 @@ class Location : AppCompatActivity() {
     private lateinit var t2: TextView
     private lateinit var t3: TextView
     private lateinit var t4: TextView
-    private lateinit var ww1: TextView
-    private lateinit var ww2: TextView
-    private lateinit var ww3: TextView
-    private lateinit var ww4: TextView
     private lateinit var imageView: ImageView
     private lateinit var des: TextView
     private lateinit var mainn: TextView
@@ -54,10 +50,6 @@ class Location : AppCompatActivity() {
         t2 = findViewById(R.id.v2)
         t3 = findViewById(R.id.v3)
         t4 = findViewById(R.id.v4)
-        ww1 = findViewById(R.id.w1)
-        ww2 = findViewById(R.id.w2)
-        ww3 = findViewById(R.id.w3)
-        ww4 = findViewById(R.id.w4)
         imageView = findViewById(R.id.idTVweather)
         mainn = findViewById(R.id.mainn)
         des = findViewById(R.id.des)
@@ -211,10 +203,6 @@ class Location : AppCompatActivity() {
                     t2.text = "$humidity"
                     t3.text = "$longitude"
                     t4.text = "$latitude"
-                    ww1.text = "Temperature :"
-                    ww2.text = "Humidity :"
-                    ww3.text = "Longitude :"
-                    ww4.text = "Latitude :"
                     des.text = "$description"
                     mainn.text = "$mainner"
                     name.text = "$names"
